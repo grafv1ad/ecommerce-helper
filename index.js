@@ -18,7 +18,7 @@ class ECommerceHelper {
     }
 
     formatData(data) {
-        data = { ...data }
+        data = { ...data };
         if (data.hasOwnProperty('price')) data.price = parseFloat(data.price) || 0;
         if (data.hasOwnProperty('index')) data.index = parseInt(data.index) || 1;
         if (data.hasOwnProperty('quantity')) data.quantity = parseInt(data.quantity) || 1;
